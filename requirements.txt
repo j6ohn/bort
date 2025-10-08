@@ -19,10 +19,4 @@ google-auth
 google-auth-oauthlib
 google-auth-httplib2
 firebase-admin
-pdfplumber
-google-generativeai
-PyPDF2
-steam
-steampy
-wit
 python-a2s
