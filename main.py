@@ -13,15 +13,11 @@ intents = discord.Intents.default()
 intents.members = True
 intents.message_content = True
 bot = commands.Bot(command_prefix='!', intents=intents)
-ROLE_ID = 976330092693311548  
 
-result_channel_id = 1270428610448068649
-AUTHORIZED_USERS = [383004753459806217, 1214104505243930645, 166304067579019265, 259429005499957249]
-CHANNEL_IDS = [977563049001115738, 977563149307887637, 976305065923076106]
-penismen = [259429005499957249, 1214104505243930645, 242440226931212300, 267399123089489920, 166304067579019265, 383004753459806217]
+
 
 # Specify the allowed server ID
-ALLOWED_GUILD_ID = 970757427169484890  # Change this to your server's ID
+ALLOWED_GUILD_ID = 1415672029977383097  # Change this to your server's ID
 
 cred_data = json.loads(os.getenv('cred'))
 cred = credentials.Certificate(cred_data)
@@ -68,7 +64,7 @@ async def on_ready():
     guild = discord.Object(id=ALLOWED_GUILD_ID)
     await bot.sync_commands()
 
-    await bot.change_presence(activity=discord.Game(name="Team Fortress 2"))
+    await bot.change_presence(activity=discord.Game(name="Tbs!!!!"))
 
     print(f'Logged in as {bot.user.name} (ID: {bot.user.id})')
 
