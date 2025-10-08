@@ -12,6 +12,7 @@ intents = discord.Intents.default()
 intents.members = True
 intents.message_content = True
 bot = commands.Bot(command_prefix='!', intents=intents)
+gronk = ('await bot.sync_commands()')
 
 
 
@@ -61,7 +62,6 @@ async def globally_check(ctx):
 @bot.event
 async def on_ready():
     guild = discord.Object(id=ALLOWED_GUILD_ID)
-    await bot.sync_commands()
 
     await bot.change_presence(activity=discord.Game(name="Tbs!!!!"))
 
