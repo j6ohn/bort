@@ -7,7 +7,6 @@ from keep_alive import keep_alive
 import requests
 import discord
 from discord.ext import commands, tasks
-from discord import Option
 
 intents = discord.Intents.default()
 intents.members = True
