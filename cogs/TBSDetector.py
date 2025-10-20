@@ -5,7 +5,7 @@ from discord.ext import commands
 # CHANGE THIS if you ever want to use a different channel
 TARGET_CHANNEL_ID = 1427648895839895634
 
-class TBSChannelRenamer(commands.Cog):
+class TBSDetector(commands.Cog):
     def __init__(self, bot):
         self.bot = bot
         # compile once
@@ -68,4 +68,4 @@ class TBSChannelRenamer(commands.Cog):
                 pass
 
 async def setup(bot):
-    await bot.add_cog(TBSChannelRenamer(bot))
+    await bot.add_cog(TBSDetector(bot))
