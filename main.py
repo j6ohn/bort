@@ -27,21 +27,7 @@ firebase_admin.initialize_app(cred, {
 
 # Load extensions (cogs)
 extensions = [
-    'cogs.RoleCog',
-    'cogs.mod1Commands',
-    'cogs.slowmode',
-    'cogs.MemberCountUpdater',
-    'cogs.Tf2UpdateRelay',
-    'cogs.LevelingSystem',
-    'cogs.EmojiAdder',
-    'cogs.Giveaway',
-    'cogs.TF2AI',    
-    'cogs.strike',
-    'cogs.MentionAble',
-    'cogs.ReactionTrigger',
-    'cogs.ReactionHandler',
-    'cogs.Punishments',
-    'cogs.TF2ServerStatus',    
+    'cogs.TBSDetector',    
 ]
 
 if __name__ == '__main__':
